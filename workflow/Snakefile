@@ -1,0 +1,98 @@
+import os
+import glob
+
+configfile: "/home/glbrc.org/millican/sourmash_ref_build/configure.yml"
+
+# 
+
+def file_getter(folder_path, taxa, extension = "_genomic.fna.gz"):
+    # Create an empty list to store the files
+    file_list = {}
+    # Loop through the files in the folder
+    for taxname in taxa:
+        for file_path in glob.glob(os.path.join(folder_path, taxname, f"*{extension}")):
+            if extension in file_path:
+                # Get the file name
+                filename = os.path.basename(file_path)
+                name = filename.replace(extension, "")
+                # Add the file to the list
+                file_list[name] = file_path
+    # Return the list of files
+    return file_list
+
+# Start of snakefile workflow
+rule all:
+    input:
+        expand("{data_dir}/taxonomy/{taxa}/genbank_taxonomy.csv", data_dir = config["data_directory"], taxa = config["taxa"]),
+        expand(glob.glob("{data_dir}/signatures/{taxa}/*sig.gz"), data_dir = config["data_directory"], taxa = config["taxa"]), # , refs = file_getter(config["genome_directory"], config["taxa"]).keys()
+        expand(glob.glob("{data_dir}/reports/{taxa}/*_assembly_report.txt"), data_dir = config["data_directory"], taxa = config["taxa"]), # , refs = file_getter(config["genome_directory"], config["taxa"], "_assembly_report.txt").keys()
+        expand(glob.glob("{data_dir}/genomes/{taxa}/*_genomic.fna.gz"), data_dir = config["data_directory"], taxa = config["taxa"]) 
+        
+
+
+
+rule download_genomes:
+    output:
+        outfile = "{data_dir}/{taxa}-genomes.txt",
+        outdir = "{data_dir}/genomes/{taxa}",
+    params:
+        taxon = "{taxa}",
+        download = "fasta"
+        database = lambda wildcards: config['genome_databases']
+    threads: 32
+    resources:
+        mem_mb = 300 
+    shell:
+        """
+        ncbi-download.sh {output.outfile} {output.outdir} {params.download} {params.database} {params.taxon}
+        """
+
+
+rule download_reports:
+    output:
+        outfile = "{data_dir}/{taxa}-reports.txt",
+        outdir = "{data_dir}/reports/{taxa}",
+    params:
+        taxon = "{taxa}",
+        download = "assembly-report"
+        database = lambda wildcards: config['genome_databases']
+    threads: 32
+    resources:
+        mem_mb = 300 
+    shell:
+        """
+        ncbi-download.sh {output.outfile} {output.outdir} {params.download} {params.database} {params.taxon}
+        """
+
+rule parse_taxonomy:
+    input:
+        "{data_dir}/reports/{taxa}",
+        glob.glob("{data_dir}/reports/{taxa}/*_assembly_report.txt")
+    output:
+        "{data_dir}/taxonomy/{taxa}/genbank_taxonomy.csv"
+    params:
+        "{data_dir}/reports/{taxa}"
+    threads: 1
+    resources:
+        mem_mb = 200
+    shell:
+        """
+        parse_tax_v2.py -i {params} -o {output}
+        """
+
+rule sketch_refs:
+    input:
+        glob.glob("{data_dir}/genomes/{taxa}/*_genomic.fna.gz")
+    output:
+        "{data_dir}/signatures/{taxa}/{refs}.sig.gz"
+    params:
+        sketch_name = "{refs}",
+        k_value = lambda wildcards:config['kmer_values'][wildcards.k_value]
+    threads: 1
+    resources:
+        memory = '4GB'
+    shell:
+        """
+        sourmash sketch dna -p k={params.k_value},scaled=500 {input} -o {output} --name {params.sketch_name}
+        """
+# index the signatures next

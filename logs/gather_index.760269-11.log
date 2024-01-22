@@ -1,0 +1,62 @@
+000 (760269.011.000) 2023-11-13 11:15:37 Job submitted from host: <144.92.98.21:9618?addrs=144.92.98.21-9618&alias=scarcity-submit.glbrc.org&noUDP&sock=schedd_907_b47d>
+...
+001 (760269.011.000) 2023-11-13 11:15:39 Job executing on host: <144.92.98.177:9618?addrs=144.92.98.177-9618&alias=scarcity-5.glbrc.org&noUDP&sock=startd_1393_0f84>
+...
+006 (760269.011.000) 2023-11-13 11:15:48 Image size of job updated: 376716
+	17  -  MemoryUsage of job (MB)
+	16844  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:20:49 Image size of job updated: 640280
+	173  -  MemoryUsage of job (MB)
+	176960  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:25:49 Image size of job updated: 738700
+	269  -  MemoryUsage of job (MB)
+	275188  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:30:49 Image size of job updated: 852436
+	378  -  MemoryUsage of job (MB)
+	386976  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:35:50 Image size of job updated: 936296
+	461  -  MemoryUsage of job (MB)
+	471596  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:40:50 Image size of job updated: 1028072
+	550  -  MemoryUsage of job (MB)
+	562452  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:45:50 Image size of job updated: 1114216
+	636  -  MemoryUsage of job (MB)
+	650556  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:50:51 Image size of job updated: 1197792
+	717  -  MemoryUsage of job (MB)
+	733696  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 11:55:51 Image size of job updated: 1280792
+	798  -  MemoryUsage of job (MB)
+	816788  -  ResidentSetSize of job (KB)
+...
+006 (760269.011.000) 2023-11-13 12:00:23 Image size of job updated: 1362576
+	798  -  MemoryUsage of job (MB)
+	816788  -  ResidentSetSize of job (KB)
+...
+005 (760269.011.000) 2023-11-13 12:00:25 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:36, Sys 0 00:00:10  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:36, Sys 0 00:00:10  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.04        2         2 
+	   Disk (KB)            :     1           1    213139 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   798       65536     65536 
+
+	Job terminated of its own accord at 2023-11-13T18:00:23Z.
+...

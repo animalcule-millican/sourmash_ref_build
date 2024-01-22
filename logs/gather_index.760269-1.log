@@ -1,0 +1,46 @@
+000 (760269.001.000) 2023-11-13 11:15:37 Job submitted from host: <144.92.98.21:9618?addrs=144.92.98.21-9618&alias=scarcity-submit.glbrc.org&noUDP&sock=schedd_907_b47d>
+...
+001 (760269.001.000) 2023-11-13 11:15:38 Job executing on host: <144.92.98.72:9618?addrs=144.92.98.72-9618&alias=scarcity-3.glbrc.org&noUDP&sock=startd_1441_fc0f>
+...
+006 (760269.001.000) 2023-11-13 11:15:47 Image size of job updated: 504464
+	60  -  MemoryUsage of job (MB)
+	61364  -  ResidentSetSize of job (KB)
+...
+006 (760269.001.000) 2023-11-13 11:20:48 Image size of job updated: 901724
+	433  -  MemoryUsage of job (MB)
+	442448  -  ResidentSetSize of job (KB)
+...
+006 (760269.001.000) 2023-11-13 11:25:49 Image size of job updated: 1245860
+	767  -  MemoryUsage of job (MB)
+	785360  -  ResidentSetSize of job (KB)
+...
+006 (760269.001.000) 2023-11-13 11:30:49 Image size of job updated: 1580852
+	1093  -  MemoryUsage of job (MB)
+	1118512  -  ResidentSetSize of job (KB)
+...
+006 (760269.001.000) 2023-11-13 11:35:49 Image size of job updated: 1950392
+	1453  -  MemoryUsage of job (MB)
+	1486916  -  ResidentSetSize of job (KB)
+...
+006 (760269.001.000) 2023-11-13 11:39:15 Image size of job updated: 2082500
+	1453  -  MemoryUsage of job (MB)
+	1487004  -  ResidentSetSize of job (KB)
+...
+005 (760269.001.000) 2023-11-13 11:39:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:06:13, Sys 0 00:00:39  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:06:13, Sys 0 00:00:39  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.57        2         2 
+	   Disk (KB)            :     1           1    222662 
+	   GPUs                 :                           0 
+	   Memory (MB)          :  1453       65536     65536 
+
+	Job terminated of its own accord at 2023-11-13T17:39:15Z.
+...

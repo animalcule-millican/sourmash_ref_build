@@ -1,0 +1,38 @@
+000 (760269.004.000) 2023-11-13 11:15:37 Job submitted from host: <144.92.98.21:9618?addrs=144.92.98.21-9618&alias=scarcity-submit.glbrc.org&noUDP&sock=schedd_907_b47d>
+...
+001 (760269.004.000) 2023-11-13 11:15:38 Job executing on host: <144.92.98.73:9618?addrs=144.92.98.73-9618&alias=scarcity-4.glbrc.org&noUDP&sock=startd_1433_7f4e>
+...
+006 (760269.004.000) 2023-11-13 11:15:47 Image size of job updated: 385512
+	10  -  MemoryUsage of job (MB)
+	9944  -  ResidentSetSize of job (KB)
+...
+006 (760269.004.000) 2023-11-13 11:20:47 Image size of job updated: 1162252
+	697  -  MemoryUsage of job (MB)
+	712748  -  ResidentSetSize of job (KB)
+...
+006 (760269.004.000) 2023-11-13 11:25:48 Image size of job updated: 1844240
+	1393  -  MemoryUsage of job (MB)
+	1426052  -  ResidentSetSize of job (KB)
+...
+006 (760269.004.000) 2023-11-13 11:29:02 Image size of job updated: 1998180
+	1393  -  MemoryUsage of job (MB)
+	1426388  -  ResidentSetSize of job (KB)
+...
+005 (760269.004.000) 2023-11-13 11:29:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:11:31, Sys 0 00:00:22  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:11:31, Sys 0 00:00:22  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.96        2         2 
+	   Disk (KB)            :     1           1    222688 
+	   GPUs                 :                           0 
+	   Memory (MB)          :  1393       65536     65536 
+
+	Job terminated of its own accord at 2023-11-13T17:29:02Z.
+...

@@ -1,0 +1,7 @@
+genome_dir: "/home/glbrc.org/millican/sourmash_ref_build/data/genomes"
+reference_dir: "/home/glbrc.org/millican/ref_db/sourmash/references"
+taxa: ["archaea", "bacteria", "fungi", "viral", "plant", "protozoa"]
+ext_fasta: [".fasta", ".fna", ".fasta.gz", ".fna.gz", "._genomic.fna.gz", "_genomic"]
+ext_fastq: [".fastq", ".fq", ".fastq.gz", ".fq.gz", "._genomic.fnq.gz", "._genomic.fastq.gz", "_genomic"]
+ext_sig: ["_genomic.sig.gz", ".sig.gz", "_genomic"]
+ext_all: [".fasta", ".fna", ".fasta.gz", ".fna.gz", "._genomic.fna.gz", "_genomic", ".fastq", ".fq", ".fastq.gz", ".fq.gz", "._genomic.fnq.gz", "._genomic.fastq.gz", "_genomic.sig.gz", ".sig.gz"]

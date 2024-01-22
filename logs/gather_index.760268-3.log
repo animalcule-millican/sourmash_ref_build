@@ -1,0 +1,27 @@
+000 (760268.003.000) 2023-11-13 11:15:10 Job submitted from host: <144.92.98.21:9618?addrs=144.92.98.21-9618&alias=scarcity-submit.glbrc.org&noUDP&sock=schedd_907_b47d>
+...
+001 (760268.003.000) 2023-11-13 11:15:11 Job executing on host: <144.92.98.74:9618?addrs=144.92.98.74-9618&alias=scarcity-11.glbrc.org&noUDP&sock=startd_1650_575b>
+...
+006 (760268.003.000) 2023-11-13 11:15:20 Image size of job updated: 126112
+	7  -  MemoryUsage of job (MB)
+	6576  -  ResidentSetSize of job (KB)
+...
+006 (760268.003.000) 2023-11-13 11:15:20 Image size of job updated: 313680
+	7  -  MemoryUsage of job (MB)
+	6576  -  ResidentSetSize of job (KB)
+...
+004 (760268.003.000) 2023-11-13 11:15:21 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:03, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.25        2         2 
+	   Disk (KB)            :     1           1    181512 
+	   GPUs                 :                           0 
+	   Memory (MB)          :     7       65536     65536 
+...
+009 (760268.003.000) 2023-11-13 11:15:22 Job was aborted.
+	via condor_rm (by user millican)
+...

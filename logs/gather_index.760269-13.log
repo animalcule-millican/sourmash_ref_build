@@ -1,0 +1,50 @@
+000 (760269.013.000) 2023-11-13 11:15:37 Job submitted from host: <144.92.98.21:9618?addrs=144.92.98.21-9618&alias=scarcity-submit.glbrc.org&noUDP&sock=schedd_907_b47d>
+...
+001 (760269.013.000) 2023-11-13 11:15:39 Job executing on host: <144.92.98.51:9618?addrs=144.92.98.51-9618&alias=scarcity-13.glbrc.org&noUDP&sock=startd_1421_442b>
+...
+006 (760269.013.000) 2023-11-13 11:15:47 Image size of job updated: 380384
+	62  -  MemoryUsage of job (MB)
+	63064  -  ResidentSetSize of job (KB)
+...
+006 (760269.013.000) 2023-11-13 11:20:47 Image size of job updated: 839156
+	377  -  MemoryUsage of job (MB)
+	385804  -  ResidentSetSize of job (KB)
+...
+006 (760269.013.000) 2023-11-13 11:25:48 Image size of job updated: 1124988
+	658  -  MemoryUsage of job (MB)
+	672976  -  ResidentSetSize of job (KB)
+...
+006 (760269.013.000) 2023-11-13 11:30:48 Image size of job updated: 1415332
+	932  -  MemoryUsage of job (MB)
+	954028  -  ResidentSetSize of job (KB)
+...
+006 (760269.013.000) 2023-11-13 11:35:48 Image size of job updated: 1686380
+	1198  -  MemoryUsage of job (MB)
+	1226464  -  ResidentSetSize of job (KB)
+...
+006 (760269.013.000) 2023-11-13 11:40:49 Image size of job updated: 1988216
+	1491  -  MemoryUsage of job (MB)
+	1526356  -  ResidentSetSize of job (KB)
+...
+006 (760269.013.000) 2023-11-13 11:43:25 Image size of job updated: 2083020
+	1491  -  MemoryUsage of job (MB)
+	1526356  -  ResidentSetSize of job (KB)
+...
+005 (760269.013.000) 2023-11-13 11:43:25 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:05:52, Sys 0 00:00:31  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:05:52, Sys 0 00:00:31  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.30        2         2 
+	   Disk (KB)            :     1           1    214954 
+	   GPUs                 :                           0 
+	   Memory (MB)          :  1491       65536     65536 
+
+	Job terminated of its own accord at 2023-11-13T17:43:25Z.
+...
